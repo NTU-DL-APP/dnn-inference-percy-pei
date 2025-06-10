@@ -10,11 +10,9 @@ from tensorflow.keras.layers import Dropout
 
 # === Activation functions ===
 def relu(x):
-    # TODO: Implement the Rectified Linear Unit
     return np.maximum(0, x)
 
 def softmax(x):
-    # TODO: Implement the SoftMax function
     x = np.array(x)
     if x.ndim == 1:
         x = x - np.max(x)
